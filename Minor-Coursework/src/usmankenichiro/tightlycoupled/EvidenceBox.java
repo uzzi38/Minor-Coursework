@@ -5,7 +5,7 @@ public class EvidenceBox {
 	private final int caseNumber;
 	private final String caseName;
 	
-	private final ArrayList<Evidence> evidenceList;
+	private ArrayList<Evidence> evidenceList;
 	
 	public EvidenceBox(int caseNumber, String caseName){
 		this.caseNumber = caseNumber;
