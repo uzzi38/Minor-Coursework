@@ -33,9 +33,9 @@ public class EvidenceBox {
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
 		ArrayList<String> typeList = new ArrayList<>();
-		for(Evidence we : evidenceList){
-			if(!typeList.contains(we.getType())){
-				typeList.add(we.getType());
+		for(Evidence e : evidenceList){
+			if(!typeList.contains(e.getType())){
+				typeList.add(e.getType());
 			}
 		}
 		for(String type : typeList){
