@@ -46,7 +46,7 @@ public class EvidenceBox {
 				}				
 			}
 
-			builder.append(size +"x " + type + System.lineSeparator());	//Stores a long string of all of the different types annd the number of times they occur in the list		
+			builder.append(size +"x " + type + System.lineSeparator());	//Stores a long string of all of the different types and the number of times they occur in the list		
 		}
 		return builder.toString();						//Returns the string
 	}
