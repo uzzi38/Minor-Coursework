@@ -6,29 +6,50 @@ public class EvidenceBox {
 	private final String caseName;
 	
 	private ArrayList<Evidence> evidenceList;					//Stores the evidence inside the box in a list
-	
+	/**
+	 * Constructor for the EvidenceBox. Takes the case number and name and stores them locally.
+	 * @param caseNumber
+	 * @param caseName
+	 */
 	public EvidenceBox(int caseNumber, String caseName){
 		this.caseNumber = caseNumber;
 		this.caseName = caseName;
 		evidenceList = new ArrayList<>();
 	}															//Evidence Constructor
-	
+	/**
+	 * Returns the case number for use outside this class.
+	 * @return Case number
+	 */
 	public int getCaseNumber() {
 		return caseNumber;
 	}															//Returns the case number
-
+	/**
+	 * Returns the case name for use outside this class.
+	 * @return Case name
+	 */
 	public String getCaseName() {
 		return caseName;
 	}															//Returns the case name
-
+	/**
+	 * Adds a piece of evidence to the locally stored list in this EvidenceBox
+	 * @param evidence
+	 */
 	public void add(Evidence evidence){
 		evidenceList.add(evidence);
 	}															//Adds evidence to the list
-
+	/**
+	 * Returns the list of Evidence for use in other classes
+	 * @return evidenceList inside this box
+	 */
 	public ArrayList<Evidence> getEvidenceList() {
 		return evidenceList;
 	}															//Returns the list of evidence
-
+	/**
+	 * Returns a customised string representation of this object.
+	 * Loops through the list of evidence above to create a new list 
+	 * containing all of the different types of evidence.
+	 * Then prints out the number of each different type of evidence in the box.
+	 */
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
