@@ -1,5 +1,4 @@
 package usmankenichiro;
-
 import java.util.ArrayList;
 
 import usmankenichiro.tightlycoupled.Evidence;
