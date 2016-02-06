@@ -1,5 +1,10 @@
 package usmankenichiro.tightlycoupled;
 import java.util.ArrayList;
+	/**
+	 * 
+	 * class of an evidence box for tightlycoupled.
+	 *
+	 */
 
 public class EvidenceBox {
 	private final int caseNumber;
@@ -8,8 +13,8 @@ public class EvidenceBox {
 	private ArrayList<Evidence> evidenceList;					//Stores the evidence inside the box in a list
 	/**
 	 * Constructor for the EvidenceBox. Takes the case number and name and stores them locally.
-	 * @param caseNumber
-	 * @param caseName
+	 * @param caseNumber the case number which specifies an evidence box.
+	 * @param caseName the case name is the name of an evidence box.
 	 */
 	public EvidenceBox(int caseNumber, String caseName){
 		this.caseNumber = caseNumber;
@@ -32,7 +37,7 @@ public class EvidenceBox {
 	}															//Returns the case name
 	/**
 	 * Adds a piece of evidence to the locally stored list in this EvidenceBox
-	 * @param evidence
+	 * @param evidence an evidence. 
 	 */
 	public void add(Evidence evidence){
 		evidenceList.add(evidence);

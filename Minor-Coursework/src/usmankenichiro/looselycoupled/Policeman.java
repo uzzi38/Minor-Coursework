@@ -1,6 +1,10 @@
 package usmankenichiro.looselycoupled;
 import java.util.ArrayList;
-
+	/**
+	 * 
+	 * class of an policeman for looselycouple.
+	 *
+	 */
 public class Policeman {
 	private String name;
 	private ArrayList<EvidenceBox> evidenceBoxes; //A store of all evidence boxes the policeman holds
@@ -23,7 +27,7 @@ public class Policeman {
 	} //Personalised toString which prints out the name of the policeman
 	/**
 	 * Gives an EvidenceBox to the Policeman
-	 * @param evidenceBox
+	 * @param evidenceBox an evidence box.
 	 */
 	public void addEvidenceBox(EvidenceBox evidenceBox){
 		evidenceBoxes.add(evidenceBox);
@@ -31,18 +35,18 @@ public class Policeman {
 	/**
 	 * Returns all of the evidence the policeman has of a certain
 	 * type and for a certain case.
-	 * @param caseNumber
-	 * @param type
+	 * @param caseNumber the case number which specifies an evidence box.
+	 * @param type the kinds of evidences.
 	 * @return Evidence pertaining to a certain type and case.
 	 */
 	public ArrayList<Evidence> possessedEvidences(int caseNumber, String type){
-		ArrayList<Evidence> result = new ArrayList<>();					
+		//ArrayList<Evidence> result = new ArrayList<>();	no need				
 		for(EvidenceBox e1 : evidenceBoxes){							//Loops through the evidenceBoxes in the list above
 			if(e1.getCaseNumber()== caseNumber){						//Checks if the evidence box is the correct one (using the caseNumber) 
-				e1.getEvidenceByType(type);
+				return e1.getEvidenceByType(type);
 			}
 		}		
-		return result; //Returns the list of evidence of the correct type
+		return null; //Returns the list of evidence of the correct type
 	}
 }
 
