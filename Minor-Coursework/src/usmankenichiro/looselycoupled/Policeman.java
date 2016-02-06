@@ -39,14 +39,13 @@ public class Policeman {
 	 * @param type the kinds of evidences.
 	 * @return Evidence pertaining to a certain type and case.
 	 */
-	public ArrayList<Evidence> possessedEvidences(int caseNumber, String type){
-		//ArrayList<Evidence> result = new ArrayList<>();	no need				
+	public ArrayList<Evidence> possessedEvidences(int caseNumber, String type){			
 		for(EvidenceBox e1 : evidenceBoxes){							//Loops through the evidenceBoxes in the list above
 			if(e1.getCaseNumber()== caseNumber){						//Checks if the evidence box is the correct one (using the caseNumber) 
 				return e1.getEvidenceByType(type);
 			}
 		}		
-		return null; //Returns the list of evidence of the correct type
+		return null; //Returns null
 	}
 }
 
