@@ -45,7 +45,7 @@ public class Policeman {
 				return e1.getEvidenceByType(type);
 			}
 		}		
-		return null; //Returns null
+		return null; //Returns null when there is no evidence which you are looking for in the evidence.
 	}
 }
 
